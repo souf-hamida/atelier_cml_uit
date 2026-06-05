@@ -43,7 +43,7 @@ df.drop(index=df[df['Age'] > 80].index.tolist(), axis=0, inplace=True)
 
 
 ## To features and target
-X = df.drop(columns=['Exited'], axis=1)
+X = df.drop(columns=['Exited'])
 y = df['Exited']
 
 ## Split to train and test
